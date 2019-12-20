@@ -1,0 +1,9 @@
+body {
+  background: url("../../images/drawing-1.svg") no-repeat center center fixed;
+  background-size: cover; }
+
+.bg-dark-puple {
+  background-color: #160b16; }
+
+.bg-faded {
+  background-color: rgba(245, 245, 245, 0.1); }
