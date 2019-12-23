@@ -6,103 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Title</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/main.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark-puple">
-  <a class="navbar-brand"  href="#">Speed Site</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Other</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Left Item</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Left Item 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Left Item 3</a>
-        </li>
-      </ul>
+
+<h1 class="text-center">December 21</h1>
+
+<div class="container bg-clear-dark text-light rounded">
+  <h2>What Is this?</h2>
+  <div>
+    <p>This is a quickly built website made using bootstrap 4. Bootstrap was mainly used for the layout, custom CSS (technically SCSS, although unique SCSS features were barely used) was used for the stylings</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-7">
+      <h2>Rules</h2>
+      <p>Only use black red and white.</p>
+      <p>Use bootstrap 4, and freely edit the CSS</p>
+      <p>It must not resemble anything similar to the last 2 speed sites I made.</p>
     </div>
-</nav>
-
-<div class="container">
-  <div class="card border-0 shadow my-5 text-white bg-faded">
-    <div class="card-body p-5">
-      <h1 class="font-weight-light">Speed Site, 20 Dec</h1>
-      <p class="lead">In this site, I decided to use bootstrap 4. I have created an SVG for the background and have tweaked a few of the colors/opacity.</p>
-      <p>Scroll down...</p>
-
-      <div class="row my-5">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="card bg-faded">
-            <img class="card-img-top" src="./images/food.jpeg">
-            <div class="card-body">
-              <p class="card-text">This is a picture for some food items. This is a free stock image created by JÉSHOOTS in which I have reduced the quality.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card bg-faded">
-            <img class="card-img-top" src="./images/skeleton.jpeg">
-            <div class="card-body">
-              <p class="card-text">A picture of a skeleton. This is low resolution, black and white version of a free stock image created by Chris J Mitchellin.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="font-weight-light">Insight</h2>
-      <p>Bootstrap 4 - allowed me to make this site very quickly - the bootstrap navbar was easy to implement and the toggle seemed like a much better choice than the alternatives I have been using in previous sites.</p>
-      <p>I the only css I used is as follows</p>
-      <p><pre class="bg-faded rounded p-2"><code class="text-white">body{
-  background: url('../../images/drawing-1.svg') no-repeat center center fixed;
+    <div class="col-md-5">
+      <h2>Fonts</h2>
+      <p>The fonts that ive used are from font.googleapis.com. They are Amatic SC and Josefin Slab.</p>
+    </div>
+  </div>
+  <div>
+    <h2>All the CSS (SCSS) used is as following</h2>
+    <pre class="text-light bg-clear-dark"><code>@mixin important-text{
+ font-family: 'Amatic SC', cursive;
+ color: rgb(255,100,100);
+ font-weight: bold;
+}
+@mixin default-text{
+  font-family: 'Josefin Slab', serif;
+}
+body{
+  @include default-text;
+  font-size: 30px;
+  background: url('../../images/logo.png') no-repeat center center fixed;
   background-size: cover;
 }
-
-.bg-dark-puple{
-  background-color: rgb(22,11,22);
+h1{
+  @include important-text;
+  font-size: 120px;
+  padding: 70px 0;
 }
-.bg-faded{
-  background-color: rgba(245, 245, 245, 0.1);
-}</code></pre></p>
-    </div>
+h2{
+  @include important-text;
+  font-size: 60px;
+  padding: 20px 0;
+  transform: rotate(-0.002turn);
+}
+.bg-clear-dark{
+  background-color: rgba(0,0,0,0.8)
+}
+pre{
+  font-size: 12px;
+}</code></pre>
+
+
+  </div>
+  <div>
+    <h2>Insight</h2>
+    <p>It looks quite arty, altough there is no navigation. Perhaps the bottom images would be better as navigation after the content has been read.</p>
+  </div>
+  <div class="pb-2">
+    <h2>Stock images</h2>
+    <p>Clocks by Andrey Grushnikov</p>
+    <p>Red image by mentatdgt</p>
+    <p>Skeleton by Chris J Mitchellin</p>
   </div>
 </div>
 
-<div class="container-fluid text-white bg-dark-puple pt-3 px-5">
-    <div class="row text-center">
-      <div class="col-md-6 col-lg-4 text-md-left text-lg-left">
-        <p>A place for ssome information</p>
-        <p>Telephone: 01632 555 555</p>
-      </div>
-      <div class="col-md-6 col-lg-4 text-md-right text-lg-center">
-        <p>Email: imaginaryBob@coldMail.com</p>
-        <p>Some othe time</p>
-      </div>
-      <div class="col-md-12 col-lg-4 text-md-left text-lg-right">
-        <p>www.otherwebstie.notReal</p>
-        <p>www.bbc.co.uk</p>
-      </div>
-  </div>
 
+<div class="container-fluid px-0 mt-5">
+  <div class="row no-gutters">
+    <img class="col-6 col-md-4 col-lg-3 img-fluid" src="./images/clocks.png">
+    <img class="col-6 col-md-4 col-lg-3 img-fluid" src="./images/food.jpeg">
+    <img class="col-6 col-md-4 col-lg-3 img-fluid" src="./images/skeleton.jpeg">
+    <img class="col-6 d-md-none d-lg-block col-lg-3 img-fluid" src="./images/redRoom.jpeg">
+  </div>
 </div>
+
+
+
+
+
+
 
 
 

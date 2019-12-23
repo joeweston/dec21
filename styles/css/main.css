@@ -1,9 +1,26 @@
 body {
-  background: url("../../images/drawing-1.svg") no-repeat center center fixed;
+  font-family: 'Josefin Slab', serif;
+  font-size: 30px;
+  background: url("../../images/logo.png") no-repeat center center fixed;
   background-size: cover; }
 
-.bg-dark-puple {
-  background-color: #160b16; }
+h1 {
+  font-family: 'Amatic SC', cursive;
+  color: #ff6464;
+  font-weight: bold;
+  font-size: 120px;
+  padding: 70px 0; }
 
-.bg-faded {
-  background-color: rgba(245, 245, 245, 0.1); }
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: #ff6464;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 20px 0;
+  transform: rotate(-0.002turn); }
+
+.bg-clear-dark {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+pre {
+  font-size: 12px; }

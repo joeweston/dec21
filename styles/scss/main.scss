@@ -1,13 +1,36 @@
 
 
-body{
-  background: url('../../images/drawing-1.svg') no-repeat center center fixed;
-  background-size: cover;
+@mixin important-text{
+ font-family: 'Amatic SC', cursive;
+ color: rgb(255,100,100);
+ font-weight: bold;
 }
 
-.bg-dark-puple{
-  background-color: rgb(22,11,22);
+
+@mixin default-text{
+  font-family: 'Josefin Slab', serif;
 }
-.bg-faded{
-  background-color: rgba(245, 245, 245, 0.1);
+body{
+  @include default-text;
+  font-size: 30px;
+  background: url('../../images/logo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+h1{
+  @include important-text;
+  font-size: 120px;
+  padding: 70px 0;
+}
+h2{
+  @include important-text;
+  font-size: 60px;
+  padding: 20px 0;
+  transform: rotate(-0.002turn);
+}
+
+.bg-clear-dark{
+  background-color: rgba(0,0,0,0.8)
+}
+pre{
+  font-size: 12px;
 }
